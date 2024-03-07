@@ -19,15 +19,15 @@ const Mainpagee = () => {
       }}>
         <div className='MainGlass h-5/6 w-5/6 bg-yellow-200 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 flex flex-row'>
           <div className='h-inherit w-1/2 flex items-center justify-center relative'>
-            <img src={vector} alt="vector" className='hidden size-96 absolute inset-0 mx-auto '/>
-            <Mycarousel/>
+            <img src={vector} alt="vector" className='size-80 '/>
+            {/* <Mycarousel className="size-3"/> */}
           </div>
           <div className='h-inherit w-1/2 pt-2 pr-10'>
             <div>
                 <p className='text-6xl font-bold -tracking-32 bg-gradient-to-r from-startgradient  to-endgradient text-transparent bg-clip-text py-1'>Welcome !</p>
                 <div className='pb-3'>
                   <p className='text-sm bg-gradient-to-r from-white via-startgradient to-endgradient text-transparent bg-clip-text inline'>already signed up? </p>
-                  <a href='/' className='underline underline-offset-2'>Sign in here</a>
+                  <a href='/welcomeback' className='underline underline-offset-2 px-1'>Sign in here</a>
                 </div>
             </div>
             <div className='Form'>
@@ -39,7 +39,7 @@ const Mainpagee = () => {
                       <div className='bg-black rounded-full'>
                         <div className=' flex flex-row  py-1 px-3 bg-yellow-200 rounded-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10'>
                           <img src={fname} alt="img" className='size-6 py-1'/>
-                          <input type="text" className='bg-transparent  mx-2 focus:outline-0' />
+                          <input type="text" className='bg-transparent  mx-2 focus:outline-0 w-full' />
                         </div>
                       </div>
                     </div>
@@ -51,7 +51,7 @@ const Mainpagee = () => {
                       <div className='bg-black rounded-full'>
                         <div className=' flex flex-row  py-1 px-3 bg-yellow-200 rounded-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10'>
                           <img src={lname} alt="img" className='size-6 py-1' />
-                          <input type="text" className='bg-transparent  mx-2 focus:outline-0' />
+                          <input type="text" className='bg-transparent  mx-2 focus:outline-0 w-full' />
                         </div>
                       </div>
                     </div>
@@ -65,7 +65,7 @@ const Mainpagee = () => {
                         <div className='bg-black rounded-full'>
                           <div  className='flex flex-row  py-1 px-3 bg-yellow-200 rounded-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10'>
                             <img src={email} alt="img" className=' py-1'/>
-                            <input type="email" placeholder='johndoe@gmail.com' className='mx-2 bg-transparent focus:outline-0'/>
+                            <input type="email" placeholder='johndoe@gmail.com' className='w-full mx-2 bg-transparent focus:outline-0'/>
                           </div>
                         </div>
                       </div>
@@ -77,7 +77,7 @@ const Mainpagee = () => {
                           <div  className=' flex flex-row justify-between  py-0.5 px-3 bg-yellow-200 rounded-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10'>
                             <div className='flex flex-row'>
                               <img src={contact} alt="img" className='px-1 size-8'/>
-                              <input type="tel" placeholder='9164253253' className='mx-2 bg-transparent focus:outline-0' />
+                              <input type="tel" placeholder='9164253253' className='w-full mx-2 bg-transparent focus:outline-0' />
                             </div>
                             <div><button className=' px-5 rounded-full  bg-black border-2 border-borderend bg-opacity-25'>Verify</button></div>
                           </div>
@@ -92,7 +92,7 @@ const Mainpagee = () => {
                       <div className='bg-black rounded-full'>
                         <div className=' flex flex-row justify-between  py-0.5 px-3 bg-yellow-200 rounded-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10'>
                           <img src={pwd} alt="img" className='px-1 size-8'/>
-                          <input type="password" placeholder='**********' className='mx-2 bg-transparent focus:outline-0'/>
+                          <input type="password" placeholder='**********' className='w-full mx-2 bg-transparent focus:outline-0'/>
                         </div>
                       </div>
                     </div>
@@ -103,7 +103,7 @@ const Mainpagee = () => {
                       <div className='bg-black rounded-full'>
                         <div className=' flex flex-row justify-between  py-0.5 px-3 bg-yellow-200 rounded-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10'>
                           <img src={pwd} alt="img" className='px-1 size-8' />
-                          <input type="password" placeholder='**********' className='mx-2 bg-transparent focus:outline-0'/>
+                          <input type="password" placeholder='**********' className='w-full mx-2 bg-transparent focus:outline-0'/>
                         </div>
                       </div>
                     </div>

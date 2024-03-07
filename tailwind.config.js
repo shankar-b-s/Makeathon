@@ -10,6 +10,7 @@ module.exports = {
         'endgradient' : '#F0A200',
         'borderstart' : '#FDDA53',
         'borderend' : '#808AF6',
+        'forgotpwd' : '#FF8008',
       }
     },
   },
