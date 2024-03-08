@@ -9,21 +9,21 @@ import ggl from '../images/ggl.png';
 const Welcomeback = () => {
   return ( 
     <div className="Welcomeback">
-      <div className="Welcomback  w-full h-screen flex items-center justify-center text-white" 
+      <div className="Welcomback   w-full h-full md:h-screen flex items-center justify-center text-white" 
       style={{backgroundImage: `url(${finalbg})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center'
       }}>
-        <div className='MainGlass h-5/6 w-5/6 bg-yellow-200 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 flex flex-row'>
-          <div className='h-inherit w-1/2 flex items-center justify-center relative'>
+        <div className='MainGlass h-full lg:h-5/6  bg-yellow-200 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 flex flex-col w-5/6 md:flex-row pb-6 md:pb-0'>
+          <div className='sm:h-inherit sm:w-1/2 flex items-center justify-center relative pt-1 md:pt-0 '>
             <img src={vector} alt="vector" className=' size-80 absolute z-0'/>
-            <Mycarousel className="size-3 relative z-10"/>            
+            <Mycarousel className="size-0.5 lg:size-3 relative z-10"/>            
           </div>
-          <div className='h-inherit w-1/2 pt-8 pr-10'>
+          <div className='h-inherit w-4/5 md:w-1/2  pt-2 pl-10 md:pt-8 md:pr-10 md:pl-0'>
             <div>
-              <p className='text-7xl font-bold -tracking-32 bg-gradient-to-r from-startgradient  to-endgradient text-transparent bg-clip-text py-1'>Welcome Back !</p>
+              <p className='text-4xl lg:text-7xl font-bold -tracking-32 bg-gradient-to-r from-startgradient  to-endgradient text-transparent bg-clip-text py-1'>Welcome Back !</p>
               <div className='pb-3'>
-                <p className='text-sm bg-gradient-to-r from-white via-startgradient to-endgradient text-transparent bg-clip-text inline'>new here ? </p>
+                <p className='text-md bg-gradient-to-r from-white via-startgradient to-endgradient text-transparent bg-clip-text inline'>new here ? </p>
                 <a href='/' className='underline underline-offset-2 px-1'>Sign up here</a>
               </div>
             </div>
