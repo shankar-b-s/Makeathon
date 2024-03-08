@@ -16,8 +16,8 @@ const Welcomeback = () => {
       }}>
         <div className='MainGlass h-5/6 w-5/6 bg-yellow-200 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 flex flex-row'>
           <div className='h-inherit w-1/2 flex items-center justify-center relative'>
-            <img src={vector} alt="vector" className=' size-80'/>
-            {/* <Mycarousel className="size-3 hidden"/>             */}
+            <img src={vector} alt="vector" className=' size-80 absolute z-0'/>
+            <Mycarousel className="size-3 relative z-10"/>            
           </div>
           <div className='h-inherit w-1/2 pt-8 pr-10'>
             <div>
@@ -63,7 +63,7 @@ const Welcomeback = () => {
                         </div>
                       </div>
                     </div>
-                    <a href="/"><div className='inline underline underline-offset-2 text-sm text-forgotpwd'>forgot password ?</div></a>
+                    <a href="/forgotpwd"><div className='inline underline underline-offset-2 text-sm text-forgotpwd'>forgot password ?</div></a>
                   </div>
                   <div className='flex align-center justify-center mt-4'>
                       <button className='bg-black p-2   border-2 rounded-full py-2 px-10'>Submit</button>
